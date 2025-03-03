@@ -5,7 +5,7 @@ class Hash():
         self.hash = hash  # Store the provided hash value
 
     def virustotal(self):
-        API_KEY = "b25c1c92505a65c7e763e4e6d1e47bcf2226b5f5ec5493d85705b708762363ba"
+        API_KEY = "AA"
         VT_URL = "https://www.virustotal.com/api/v3/files/"
 
         headers = {
@@ -35,7 +35,7 @@ class IPAddress():
         self.ip = ip  # Store the provided IP address
 
     def abuseipdb(self):
-        API_KEY = "082e1328eb21c0802c38cd9502592ad9fcd81aa8dfbb19452bb5a3796810352f56466265638226b4"
+        API_KEY = "AA"
         url = "https://api.abuseipdb.com/api/v2/check"
 
         params = {"ipAddress": self.ip}
@@ -65,7 +65,7 @@ class Domain():
         self.domain = domain  # Store the provided domain name
 
     def alienvault(self):  # Domain should not include 'www.'
-        API_KEY = "6fc1902347a503769c257ec4649f7ba2db0a16e2a70411f1588d0682b6097256"
+        API_KEY = "AA"
         HEADERS = {'X-OTX-API-KEY': API_KEY}
 
         url = f"https://otx.alienvault.com/api/v1/indicators/domain/{self.domain}"
